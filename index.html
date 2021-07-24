@@ -1,0 +1,45 @@
+<html>
+<head>
+	<title>Math quiz game </title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="quiz_game.css">
+
+<script src="quiz.js"></script>
+</head>
+<body class = "body-background" style="background-image: url('img.jpg');">
+    </body>
+ 
+	<h2 id = "player1_name"></h2> <span id = "player1_score"></span>
+	<h2 id = "player2_name"></h2> <span id = "player2_score"></span>
+
+<div class ="container">
+<center>
+	    <h1 style = "color: rgb(0, 0, 0);">Math Quiz Game</h1>
+        <h2 id = "player_question">Question turn -</h2>
+		<h2 id = "player_answer">Answer turn -</h2>
+
+		<div id ="output" class ="col-lg-6">
+			<span>Answer :</span> <input type="number" id =änswer>
+			<br>
+			<br>
+			<button onclick="check()" class="btn btn-info" style="width: 30%;">check</button>
+		</div>
+		<br>
+		<br>
+		<h3>Number 1</h3>
+		<input type="text" id = "number1" class="form-control" placeholder="Number 1">
+		<br>
+		<h3>number2</h3>
+		<input type="text" id = "number2" class="form-control" placeholder="Number 2">
+		<br>
+		<button onclick="send()" class= "btn btn-success" style="width: 30%;">send</button>
+</center>
+</div>
+<script src="quiz.js"></script>
+</body>
+</html>
